@@ -1,0 +1,149 @@
+body {
+   background-color: #EFF2F7;
+}
+
+.Content {
+   width: 100%;
+   margin: 0 auto;
+   font-family: 'Open Sans', sans-serif;
+}
+
+.Header {
+   background: #BA142D;
+   height: 55px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   width: 100%;
+}
+
+.HeaderLogo {
+   background: #BA142D;
+   height: 55px;
+   line-height: 55px;
+   width: 100%;
+   text-align: center;
+}
+
+.Logo {
+   padding-left: 20px;
+   position: absolute;
+   left: 0;
+   top: 12px;
+}
+
+.Wrapper {
+   height: 90vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.WrapperWithBar {
+   height: 80vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.Card {
+   height: 450px;
+   margin: 30px;
+   padding: 30px;
+   background-color: white;
+   box-sizing: border-box;
+}
+
+
+.FormBackground {
+   position: fixed;
+   right: -105px;
+   bottom: -40px;
+   z-index: -2;
+}
+
+.FooterBar {
+   position: absolute;
+   bottom: 0;
+   height: 10vh;
+   width: 100%;
+   display: flex;
+   -webkit-box-shadow: 0px -2px 7px 0px rgba(209,197,209,1);
+   -moz-box-shadow: 0px -2px 7px 0px rgba(209,197,209,1);
+   box-shadow: 0px -2px 7px 0px rgba(209,197,209,1);
+}
+
+.Bar {
+   width: 25%;
+   display: flex;
+   text-align: center;
+   flex-direction: column;
+   justify-content: center;
+   font-size: 12px;
+   font-weight: 300;
+}
+
+.BarRed {background-color: #BA142D; color: white;}
+.BarWhite {background-color: #ffffff; border-left: solid 1px #EFF2F7; color: #C4C6CC; font-weight: 400;}
+.BarGrey {background-color: #EFF2F7; color: #C4C6CC; font-weight: 400;}
+
+/* TXT  ---------------------------------------------------------------------*/
+.HeaderTitle {
+   color: white;
+   font-weight: 400;
+   font-size: 16px;
+}
+
+.SectionMessage {
+   display: flex;
+   justify-content:center;
+   flex-direction: column;
+   height: 200px;
+}
+.ConnexionBaseline {
+   font-size: 16px;
+   font-weight: 400;
+   text-align: center;
+   padding-bottom: 30px;
+}
+.LocationBaseline {
+   font-weight: 600;
+   text-align: center;
+   padding-top: 5px;
+   font-size: 18px;
+   line-height: 20px;
+}
+
+/* INPUT ---------------------------------------------------------------------*/
+.InputWhite {
+   background: #FDFDFE;
+   border: 1px solid #C4C6CC;
+   border-radius: 2px;
+   height: 44px;
+   width: 100%;
+   margin-bottom: 30px;
+   margin-top: 8px;
+   text-align: center;
+   font-size: 17px;
+   font-weight: 300;
+}
+
+.InputBlack {
+   width: 100%;
+   height: 45px;
+   background-color: #39424B;
+   border: none;
+   border-radius: 2px;
+   color: white;
+   text-align: center;
+   font-size: 17px;
+   font-weight: 300;
+   margin-top: 8px;
+}
+
+.NameInput {
+   font-weight: 300;
+   font-size: 12px;
+   color: #8493AA;
+}
