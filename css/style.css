@@ -1,7 +1,8 @@
 body {
    background-color: #EFF2F7;
+   color: #384456;
 }
-
+/* Header --------------------------------------------------------------------*/
 .Content {
    width: 100%;
    margin: 0 auto;
@@ -33,6 +34,8 @@ body {
    top: 12px;
 }
 
+
+/* Wrapper -------------------------------------------------------------------*/
 .Wrapper {
    height: 90vh;
    display: flex;
@@ -47,26 +50,37 @@ body {
    justify-content: center;
 }
 
+/* Wrapper -------------------------------------------------------------------*/
+
 .Card {
    height: 450px;
    margin: 30px;
-   padding: 30px;
+   padding: 25px;
    background-color: white;
    box-sizing: border-box;
 }
 
-
-.FormBackground {
-   position: fixed;
-   right: -105px;
-   bottom: -40px;
-   z-index: -2;
+.CardTab {
+   height: 450px;
+   margin: 30px;
+   padding: 25px;
+   background-color: white;
+   box-sizing: border-box;
 }
 
+/* Formulaire ---------------------------------------------------------------------*/
+.FormBackground {
+  transition: all .6s ease-in;
+  position: fixed;
+  right: -105px;
+  bottom: -65px;
+  z-index: -2;
+}
+/* FooterBar -----------------------------------------------------------------*/
 .FooterBar {
    position: absolute;
    bottom: 0;
-   height: 10vh;
+   height: 60px;
    width: 100%;
    display: flex;
    -webkit-box-shadow: 0px -2px 7px 0px rgba(209,197,209,1);
@@ -88,7 +102,7 @@ body {
 .BarWhite {background-color: #ffffff; border-left: solid 1px #EFF2F7; color: #C4C6CC; font-weight: 400;}
 .BarGrey {background-color: #EFF2F7; color: #C4C6CC; font-weight: 400;}
 
-/* TXT  ---------------------------------------------------------------------*/
+/* TXT  ----------------------------------------------------------------------*/
 .HeaderTitle {
    color: white;
    font-weight: 400;
@@ -105,16 +119,57 @@ body {
    font-size: 16px;
    font-weight: 400;
    text-align: center;
-   padding-bottom: 30px;
+   padding-bottom: 15px;
 }
 .LocationBaseline {
    font-weight: 600;
    text-align: center;
    padding-top: 5px;
-   font-size: 18px;
-   line-height: 20px;
+   font-size: 20px;
+   line-height: 28px;
 }
 
+.BarOption {
+  font-weight: 500;
+}
+
+.MessageAlerte {
+  text-align: center;
+}
+
+.MessageAlerteTitle {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+
+.MessageAlerteBaseline {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+}
+
+.TitleSaisie {
+  font-size: 10px;
+  color: #8493AA;
+  font-weight: 600;
+  padding-right: 15px;
+}
+
+.TitleSaisieNoPadding {
+  font-size: 10px;
+  color: #8493AA;
+  font-weight: 600;
+}
+
+.TxtSaisie {
+  font-size: 12px;
+}
+
+.BlueBlackTxt {
+  color: #252B30;
+  font-size: 12px;
+}
 /* INPUT ---------------------------------------------------------------------*/
 .InputWhite {
    background: #FDFDFE;
@@ -125,8 +180,8 @@ body {
    margin-bottom: 30px;
    margin-top: 8px;
    text-align: center;
-   font-size: 17px;
-   font-weight: 300;
+   font-size: 16px;
+   font-weight: 400;
 }
 
 .InputBlack {
@@ -137,8 +192,8 @@ body {
    border-radius: 2px;
    color: white;
    text-align: center;
-   font-size: 17px;
-   font-weight: 300;
+   font-size: 16px;
+   font-weight: 400;
    margin-top: 8px;
 }
 
@@ -146,4 +201,131 @@ body {
    font-weight: 300;
    font-size: 12px;
    color: #8493AA;
+}
+
+.InputSaisie {
+  background: #FDFDFE;
+  border: 1px solid #C4C6CC;
+  border-radius: 2px;
+  height: 34px;
+  width: 100px;
+  padding-left: 5px;
+  box-sizing: border-box;
+  font-size: 10px;
+  color: #384456;
+}
+
+.MidSize {
+  width: 80px;
+}
+
+.SmallSize {
+  width: 30px;
+  text-align: center;
+  padding: 0px;
+}
+
+.MiniSize {
+  height: 20px;
+  width: 35px;
+  text-align: center;
+  padding: 0px;
+}
+
+.BigSize {
+  width: 124px;
+}
+
+.TxtPadding {
+  padding-left: 15px;
+}
+/* INPUT ---------------------------------------------------------------------*/
+
+/* Menu  ---------------------------------------------------------------------*/
+.MenuLink {
+  background: #FFFFFF;
+  box-shadow: 0 0 25px 0 rgba(183,200,227,0.36);
+  font-size: 16px;
+  color: #39424B;
+  height: 100px;
+  margin: 0px 20px;
+  padding: 0px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.MenuMotif {
+  background: #FFFFFF;
+  box-shadow: 0 0 25px 0 rgba(183,200,227,0.36);
+  font-size: 16px;
+  color: #39424B;
+  height: 80px;
+  margin: 10px 20px;
+  padding: 0px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.MenuLink:nth-child(2) {
+  margin: 20px 20px;
+}
+
+.MenuMotifTxt {font-weight: 600; text-align: center;}
+.MenuLinkTxt {font-weight: 600;}
+
+.ArrowRight {
+  width: 8px;
+}
+/* Tab  ----------------------------------------------------------------------*/
+.DivTabInput { margin-bottom: 20px; }
+.DivTab { margin-bottom: 30px; }
+.DivTabInputBottom { margin-bottom: 0px;}
+
+.Table {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.TableNoMargin {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.Tr {
+  height: 30px;
+  line-height: 30px;
+  width: 100%;
+  text-align: center;
+  font-size: 10px;
+  color: white;
+}
+
+.TrTxtLeft {
+  text-align: left;
+  padding-left: 20px;
+  box-sizing: border-box;
+  width: 50%;
+  height:
+}
+
+.TdHeight {
+  height: 35px !important;
+  line-height: 35px;
+}
+
+td {
+  border: solid 1px white !important;
+}
+
+.TrBlue {background-color: #CACDD9; color:white;}
+.TrGrey {background-color: #F6F8FC; color:#252B30;}
+.TrGreyBis {background-color: #EFF2F7; color:#252B30;}
+.TdWhite {background-color: white;}
+
+.DivTabBottom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }

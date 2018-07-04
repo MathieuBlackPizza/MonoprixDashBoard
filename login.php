@@ -2,7 +2,7 @@
 <body>
    <div class="Content">
       <header class="Header">
-         <a href="index.php"><h1 class="HeaderTitle">MONOPRIX G.O.L.D.</h1></a>
+         <h1 class="HeaderTitle"><span class="TxtLight">MONOPRIX</span> <span class="TxtBold">G.O.L.D.</span></h1>
       </header>
       <div class="Wrapper">
          <div class="Card">
