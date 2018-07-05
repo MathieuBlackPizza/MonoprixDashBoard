@@ -2,10 +2,10 @@
 <body>
   <div class="Content">
     <header class="HeaderLogo">
-      <a href="#"><img class="Logo" src="img/logo.svg" /></a>
+      <a href="#"><img class="Logo" src="img/logo.svg"></a>
       <a href="index.php"><h1 class="HeaderTitle">Envoi caisse/EEG</h1></a>
     </header>
-    <div class="WrapperWithBar">
+    <div class="Wrapper">
       <div class="CardTab">
         <div class="DivTabInput">
           <span class="TitleSaisie">CODE</span><input class="InputSaisie BigSize" type="search" name="InputSaisie" value=""></input>
@@ -57,13 +57,12 @@
           <span class="TitleSaisie">NOMBRE D'ARTICLES DANS LA LISTE</span>
         </div>
       </div>
-    </table>
     <div class="FooterBar">
-      <div class="Bar BarRed"><a href="#" class="BarOption BarRed">RETOUR</a></div>
-      <div class="Bar BarGrey"><a href="#" class="BarOption BarGrey">-</a></div>
-      <div class="Bar BarWhite"><a href="#" class="BarOption BarWhite">OK</a></div>
-      <div class="Bar BarGrey"><a href="menu.php" class="BarOption BarGrey">-</a></div>
-      <div class="Bar BarWhite"><a href="commandefournisseur-tjl.php" class="BarOption BarWhite">VALIDER</a></div>
+      <div class="Bar BarRed"><a href="selection-motif.php" class="LinkFooterBar BarOption BarRed">RETOUR</a></div>
+      <div class="Bar BarGrey"><a href="#" class="LinkFooterBar BarOption BarGrey">-</a></div>
+      <div class="Bar BarWhite"><a href="#" class="LinkFooterBar BarOption BarWhite">OK</a></div>
+      <div class="Bar BarGrey"><a href="#" class="LinkFooterBar BarOption BarGrey">-</a></div>
+      <div class="Bar BarWhite"><a href="commande-fournisseur-SA-tjl.php" class="LinkFooterBar BarOption BarWhite">VALIDER</a></div>
     </div>
   </div>
   <img class="FormBackground" src="img/form.svg" alt="Background">

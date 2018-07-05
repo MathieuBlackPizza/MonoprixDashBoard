@@ -44,26 +44,12 @@ table {
 
 a {
 	text-decoration: none;
+	color: #39424B;
 }
 
-.InputPadding {
-	margin-bottom: 10px;
-}
-
-.TxtLight {
-	font-weight: 300;
-}
-
-.TxtBold {
-	font-weight: 600;
-}
-
-::-webkit-search-cancel-button {
-    -webkit-appearance: none;
-}
-
-input, select {
-	outline-style:none;
-	box-shadow:none;
-	border-color:transparent;
+.LinkFooterBar {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 }

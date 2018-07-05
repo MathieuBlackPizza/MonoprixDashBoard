@@ -1,11 +1,98 @@
 @media screen and (min-width: 700px) {
+    .FormBackground {
+      width: 544px;
+    }
+
    .Card {
       min-width: 500px;
       max-width: 500px;
+      height: 424px;
       margin: 0 auto;
    }
-   
-   .FormBackground {
-     width: 544px;
+
+   .CardTab {
+     height: 620px;
+     padding: 0px 50px;
+     margin: 0px 50px;
+     overflow: auto ;
+     transition: all 0.5s ease !important;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
    }
+
+
+   .DivTabInputResponsive {
+     display: flex;
+     justify-content: flex-start;
+     width: 40%;
+   }
+
+   .MenuLink {
+     height: 120px;
+     margin: 0px 68px;
+     padding: 0px 30px;
+   }
+
+   .MenuMotif {
+     height: 120px;
+     margin: 20px 68px;
+     padding: 0px 30px;
+   }
+
+   .MenuLink:nth-child(2) {
+     height: 120px;
+     margin: 20px 68px;
+   }
+
+   .ConnexionBaseline {
+     padding-bottom: 0px;
+   }
+
+   .MessageAlerteTitle {
+     margin-bottom: 10px !important;
+     font-size: 25px;
+   }
+
+   .MessageAlerteBaseline {
+     font-size: 18px;
+   }
+
+   tr {height: 55px !important; line-height: 55px !important;}
+   td {font-size: 13px;}
+
+   .TrTxtLeft {
+     width: 40%;
+     text-align: center;
+     padding-left: 0px;
+    }
+
+   .DivTab {margin-bottom: 30px;}
+   .DivTabInput {margin-bottom: 20px;}
+
+   .DivPaddingLeft {padding-left: 20px;}
+
+
+   .InputSaisie {
+     font-size: 12px;
+     width: 200px;
+     transition: all 0.5s ease !important;
+   }
+
+   .SelectResponsiveRight {
+     float: right !important;
+     width: 60% !important;
+   }
+
+   .SmallSize {
+     width: 30px !important;
+   }
+
+   .MiniSize {
+     width: 100px;
+     height: 30px;
+   }
+
+   .TitleSaisie, .TxtSaisie, .TitleSaisieNoPadding {font-size: 13px;}
+
 }

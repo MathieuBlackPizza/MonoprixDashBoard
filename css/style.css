@@ -1,7 +1,9 @@
 body {
    background-color: #EFF2F7;
    color: #384456;
+   overflow: hidden !important;
 }
+
 /* Header --------------------------------------------------------------------*/
 .Content {
    width: 100%;
@@ -11,20 +13,22 @@ body {
 
 .Header {
    background: #BA142D;
-   height: 55px;
+   height: 60px;
    display: flex;
    flex-direction: column;
    justify-content: center;
    text-align: center;
    width: 100%;
+   position: fixed;
 }
 
 .HeaderLogo {
    background: #BA142D;
-   height: 55px;
+   height: 60px;
    line-height: 55px;
    width: 100%;
    text-align: center;
+   position: fixed;
 }
 
 .Logo {
@@ -34,51 +38,52 @@ body {
    top: 12px;
 }
 
-
 /* Wrapper -------------------------------------------------------------------*/
 .Wrapper {
-   height: 90vh;
+   height: 100vh;
    display: flex;
    flex-direction: column;
    justify-content: center;
 }
 
-.WrapperWithBar {
-   height: 80vh;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
+.WrapperNoBar {
+  height: calc(100vh + 55px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
 /* Wrapper -------------------------------------------------------------------*/
 
 .Card {
-   height: 450px;
-   margin: 30px;
+   margin: 0px 30px;
    padding: 25px;
    background-color: white;
    box-sizing: border-box;
 }
 
 .CardTab {
-   height: 450px;
    margin: 30px;
    padding: 25px;
    background-color: white;
    box-sizing: border-box;
+   display: inline-block;
+}
+
+.CardScroll {
+  overflow: scroll !important;
 }
 
 /* Formulaire ---------------------------------------------------------------------*/
 .FormBackground {
   transition: all .6s ease-in;
   position: fixed;
-  right: -105px;
-  bottom: -65px;
+  right: -60px;
+  bottom: -76px;
   z-index: -2;
 }
 /* FooterBar -----------------------------------------------------------------*/
 .FooterBar {
-   position: absolute;
+   position: fixed;
    bottom: 0;
    height: 60px;
    width: 100%;
@@ -135,6 +140,7 @@ body {
 
 .MessageAlerte {
   text-align: center;
+  margin: 0px 30px;
 }
 
 .MessageAlerteTitle {
@@ -170,6 +176,32 @@ body {
   color: #252B30;
   font-size: 12px;
 }
+
+.ErrorTxt {
+  color: red;
+  font-size: 10px;
+  display: block;
+  margin-top: 5px;
+}
+
+.TxtCenter {text-align: center;}
+
+.TxtLight {font-weight: 300;}
+
+.TxtBold {font-weight: 600;}
+
+::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+.LinkConnexion {
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+ }
+
 /* INPUT ---------------------------------------------------------------------*/
 .InputWhite {
    background: #FDFDFE;
@@ -184,9 +216,25 @@ body {
    font-weight: 400;
 }
 
+.BorderBlue {
+   border: 1px solid #39424B;
+}
+
+.InputError {
+   background: #FDFDFE;
+   border: 1px solid red;
+   border-radius: 2px;
+   height: 44px;
+   width: 100%;
+   margin-top: 8px;
+   text-align: center;
+   font-size: 16px;
+   font-weight: 400;
+}
+
 .InputBlack {
    width: 100%;
-   height: 45px;
+   height: 44px;
    background-color: #39424B;
    border: none;
    border-radius: 2px;
@@ -233,12 +281,38 @@ body {
 }
 
 .BigSize {
-  width: 124px;
+  width: 124px !important;
 }
 
 .TxtPadding {
   padding-left: 15px;
 }
+
+.InputPadding {
+	margin-bottom: 10px;
+}
+
+/* input, select {
+	outline-style:none;
+	box-shadow:none;
+	border-color:transparent;
+} */
+
+select {
+  background-image: url("../img/arrow-red-down.svg") !important;
+  background-position: right 10px top 15px !important; /*Positioning*/
+  background-repeat: no-repeat !important; /*Prevent showing multiple background images*/
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
 /* INPUT ---------------------------------------------------------------------*/
 
 /* Menu  ---------------------------------------------------------------------*/
@@ -280,12 +354,18 @@ body {
 }
 /* Tab  ----------------------------------------------------------------------*/
 .DivTabInput { margin-bottom: 20px; }
+.DivTabInput:last-child { margin-bottom: 0px; }
 .DivTab { margin-bottom: 30px; }
 .DivTabInputBottom { margin-bottom: 0px;}
 
 .Table {
   width: 100%;
   margin-bottom: 30px;
+}
+
+.Tabletjl {
+  width: 100%;
+  margin-bottom: 0px;
 }
 
 .TableNoMargin {
@@ -307,7 +387,6 @@ body {
   padding-left: 20px;
   box-sizing: border-box;
   width: 50%;
-  height:
 }
 
 .TdHeight {
@@ -328,4 +407,9 @@ td {
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+
+.DivTabResponsive {
+  line-height: 34px;
+  display: flex !important;
 }
